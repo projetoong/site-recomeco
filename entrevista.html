@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrevista - Instituto Recomeçar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <a href="index.html" class="logo">
+            INSTITUTO <span>RECOMEÇAR</span>
+        </a>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="perfil.html">Meu Perfil</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="vagas.html">Vagas</a>
+            <a href="talentos.html">Talentos</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="caixa-login">
+        <h1>Entrevista inicial</h1>
+
+        <p>
+            Conte um pouco sobre você, suas experiências e seus objetivos
+            profissionais para que possamos conhecer melhor seu perfil.
+        </p>
+
+        <form id="formulario-entrevista">
+
+            <label for="entrevista-nome">Nome completo</label>
+            <input
+                type="text"
+                id="entrevista-nome"
+                required
+                placeholder="Digite seu nome completo"
+            >
+
+            <label for="entrevista-endereco">Endereço</label>
+            <input
+                type="text"
+                id="entrevista-endereco"
+                required
+                placeholder="Rua, número, bairro e cidade"
+            >
+
+            <label for="entrevista-cpf">CPF</label>
+            <input
+                type="text"
+                id="entrevista-cpf"
+                required
+                placeholder="000.000.000-00"
+                maxlength="14"
+            >
+
+            <label for="entrevista-telefone">Telefone</label>
+            <input
+                type="tel"
+                id="entrevista-telefone"
+                required
+                placeholder="(00) 00000-0000"
+            >
+
+            <label for="entrevista-experiencia">
+                Experiências anteriores
+            </label>
+            <textarea
+                id="entrevista-experiencia"
+                rows="4"
+                placeholder="Conte sobre trabalhos, atividades ou experiências que já teve"
+            ></textarea>
+
+            <label for="entrevista-habilidades">
+                Habilidades e conhecimentos
+            </label>
+            <textarea
+                id="entrevista-habilidades"
+                rows="4"
+                required
+                placeholder="Ex.: informática, comunicação, organização..."
+            ></textarea>
+
+            <button type="submit" class="botao-principal">
+                Concluir entrevista →
+            </button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Instituto Recomeçar</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

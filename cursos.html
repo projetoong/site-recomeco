@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos - Instituto Recomeçar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            INSTITUTO <span>RECOMEÇAR</span>
+        </div>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="perfil.html">Meu Perfil</a>
+            <a href="cursos.html">Cursos</a>
+            <a href="vagas.html">Vagas</a>
+            <a href="talentos.html">Talentos</a>
+        </nav>
+
+        <a href="login.html" class="botao-menu">Sair</a>
+    </header>
+
+    <main class="pagina-cursos">
+
+        <section class="cursos-topo">
+            <p class="subtitulo">DESENVOLVA SUAS HABILIDADES</p>
+            <h1>Cursos e capacitação</h1>
+            <p>
+                Aprenda novas habilidades, desenvolva seu potencial
+                e prepare-se para novas oportunidades profissionais.
+            </p>
+        </section>
+
+        <!-- ÁREA DO QUIZ -->
+        <section class="secao-cursos" id="area-quiz" hidden>
+            <div class="quiz-cabecalho">
+                <span class="categoria" id="quiz-categoria"></span>
+                <h2 id="quiz-titulo"></h2>
+                <p id="quiz-instrucao">
+                    Responda às 3 perguntas corretamente para avançar 20%.
+                </p>
+            </div>
+
+            <div class="curso-progresso">
+                <div class="curso-barra">
+                    <div
+                        class="curso-progresso-atual"
+                        id="quiz-barra-progresso"
+                        style="width: 0%">
+                    </div>
+                </div>
+                <span id="quiz-texto-progresso">0%</span>
+            </div>
+
+            <p id="quiz-etapa"></p>
+
+            <form id="formulario-quiz">
+                <div id="quiz-perguntas"></div>
+
+                <p id="quiz-mensagem" role="status"></p>
+
+                <button class="botao-curso" type="submit">
+                    Conferir respostas
+                </button>
+
+                <button
+                    class="botao-cancelar-curso"
+                    type="button"
+                    id="botao-sair-quiz">
+                    Voltar aos cursos
+                </button>
+            </form>
+        </section>
+
+        <!-- CURSOS EM ANDAMENTO -->
+        <section class="secao-cursos cursos-inscritos">
+            <h2>Seus cursos inscritos</h2>
+
+            <div class="grade-cursos" id="cursos-em-andamento">
+                <p class="mensagem-sem-cursos">
+                    Você ainda não iniciou nenhum curso.
+                    Explore os cursos disponíveis abaixo!
+                </p>
+            </div>
+        </section>
+
+        <!-- TODOS OS CURSOS -->
+        <section class="secao-cursos">
+            <h2>Explore novos cursos</h2>
+
+            <div class="grade-cursos">
+
+                <div class="curso-card">
+                    <div class="curso-imagem">💻</div>
+                    <div class="curso-conteudo">
+                        <span class="categoria">TECNOLOGIA</span>
+                        <h3>Informática Básica</h3>
+                        <p>
+                            Aprenda ferramentas digitais essenciais
+                            para o mercado de trabalho.
+                        </p>
+                        <p class="duracao">⏱ 15 horas</p>
+                        <button class="botao-curso" data-curso="informatica">
+                            Começar curso
+                        </button>
+                    </div>
+                </div>
+
+                <div class="curso-card">
+                    <div class="curso-imagem">📋</div>
+                    <div class="curso-conteudo">
+                        <span class="categoria">ADMINISTRAÇÃO</span>
+                        <h3>Auxiliar Administrativo</h3>
+                        <p>
+                            Aprenda rotinas administrativas, organização
+                            e fundamentos do ambiente corporativo.
+                        </p>
+                        <p class="duracao">⏱ 20 horas</p>
+                        <button class="botao-curso" data-curso="administrativo">
+                            Começar curso
+                        </button>
+                    </div>
+                </div>
+
+                <div class="curso-card">
+                    <div class="curso-imagem">💰</div>
+                    <div class="curso-conteudo">
+                        <span class="categoria">FINANÇAS</span>
+                        <h3>Educação Financeira</h3>
+                        <p>
+                            Aprenda a organizar sua vida financeira
+                            e tomar melhores decisões.
+                        </p>
+                        <p class="duracao">⏱ 12 horas</p>
+                        <button class="botao-curso" data-curso="financeira">
+                            Começar curso
+                        </button>
+                    </div>
+                </div>
+
+                <div class="curso-card">
+                    <div class="curso-imagem">🤝</div>
+                    <div class="curso-conteudo">
+                        <span class="categoria">CARREIRA</span>
+                        <h3>Preparação para o Mercado</h3>
+                        <p>
+                            Aprenda como criar currículos e se preparar
+                            para entrevistas de emprego.
+                        </p>
+                        <p class="duracao">⏱ 10 horas</p>
+                        <button class="botao-curso" data-curso="mercado">
+                            Começar curso
+                        </button>
+                    </div>
+                </div>
+
+                <div class="curso-card">
+                    <div class="curso-imagem">🗣️</div>
+                    <div class="curso-conteudo">
+                        <span class="categoria">DESENVOLVIMENTO</span>
+                        <h3>Comunicação Profissional</h3>
+                        <p>
+                            Desenvolva sua comunicação e aprenda a se
+                            expressar melhor no ambiente profissional.
+                        </p>
+                        <p class="duracao">⏱ 8 horas</p>
+                        <button class="botao-curso" data-curso="comunicacao">
+                            Começar curso
+                        </button>
+                    </div>
+                </div>
+
+                <div class="curso-card">
+                    <div class="curso-imagem">🎧</div>
+                    <div class="curso-conteudo">
+                        <span class="categoria">ATENDIMENTO</span>
+                        <h3>Atendimento ao Cliente</h3>
+                        <p>
+                            Desenvolva técnicas de atendimento,
+                            relacionamento e comunicação com clientes.
+                        </p>
+                        <p class="duracao">⏱ 10 horas</p>
+                        <button class="botao-curso" data-curso="atendimento">
+                            Começar curso
+                        </button>
+                    </div>
+                </div>
+
+                <div class="curso-card">
+                    <div class="curso-imagem">🚀</div>
+                    <div class="curso-conteudo">
+                        <span class="categoria">NEGÓCIOS</span>
+                        <h3>Empreendedorismo</h3>
+                        <p>
+                            Conheça os fundamentos para criar ideias,
+                            projetos e novos negócios.
+                        </p>
+                        <p class="duracao">⏱ 15 horas</p>
+                        <button class="botao-curso" data-curso="empreendedorismo">
+                            Começar curso
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CURSOS CONCLUÍDOS -->
+        <section class="secao-cursos">
+            <h2>Cursos concluídos</h2>
+
+            <div id="cursos-concluidos">
+                <p class="mensagem-sem-cursos">
+                    Você ainda não concluiu nenhum curso.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p class="copyright">
+            © 2026 Instituto Recomeçar — Protótipo educacional
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
